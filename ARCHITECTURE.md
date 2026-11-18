@@ -35,3 +35,5 @@ Supporting packages: `config` (beans, security, CORS), `util` (JWT, cookies, OTP
 ## Infrastructure
 
 `docker-compose.yml` provides Postgres (pgvector), Redis, MinIO (+ bucket init), and Mailpit. Nginx single-origin routing arrives in Sprint 4.
+
+**Local dev:** One Python virtualenv at **`.venv/`** installs the `rightly` CLI (`pip install -e .`) to start Compose, the Java API, and the frontend. Future FastAPI code in `backend-ai/` uses the same `.venv` (`pip install -e ".[ai]"`).

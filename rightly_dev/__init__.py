@@ -1,0 +1,1 @@
+"""Repo-local dev CLI for Rightly (run inside the project `.venv`)."""

@@ -8,7 +8,8 @@ import org.springframework.context.annotation.Configuration;
         RightlyJwtProperties.class,
         RightlyOtpProperties.class,
         RightlyCorsProperties.class,
-        RightlyMinioProperties.class
+        RightlyMinioProperties.class,
+        RightlyStorageProperties.class
 })
 public class RightlyConfig {
 }

@@ -1,21 +1,16 @@
 package bd.rightly.model.service;
 
-import bd.rightly.config.RightlyMinioProperties;
 import bd.rightly.model.entity.VerificationStatus;
-import io.minio.MinioClient;
-import io.minio.StatObjectArgs;
 import java.util.UUID;
 import org.springframework.stereotype.Service;
 
 @Service
 public class LocalIdentityVerifier implements IdentityVerifier {
 
-    private final MinioClient minioClient;
-    private final RightlyMinioProperties minioProperties;
+    private final ObjectStorage objectStorage;
 
-    public LocalIdentityVerifier(MinioClient minioClient, RightlyMinioProperties minioProperties) {
-        this.minioClient = minioClient;
-        this.minioProperties = minioProperties;
+    public LocalIdentityVerifier(ObjectStorage objectStorage) {
+        this.objectStorage = objectStorage;
     }
 
     @Override
@@ -23,19 +18,13 @@ public class LocalIdentityVerifier implements IdentityVerifier {
         if (nidKey == null || nidKey.isBlank() || selfieKey == null || selfieKey.isBlank()) {
             return VerificationStatus.REJECTED;
         }
-        try {
-            var nidStat = minioClient.statObject(
-                    StatObjectArgs.builder().bucket(minioProperties.bucket()).object(nidKey).build());
-            var selfieStat = minioClient.statObject(
-                    StatObjectArgs.builder().bucket(minioProperties.bucket()).object(selfieKey).build());
-            String selfieContentType = selfieStat.contentType();
-            boolean image = selfieContentType != null && selfieContentType.startsWith("image/");
-            if (nidStat.size() > 0 && selfieStat.size() > 0 && image) {
-                return VerificationStatus.VERIFIED;
-            }
-            return VerificationStatus.REJECTED;
-        } catch (Exception e) {
-            return VerificationStatus.REJECTED;
+        ObjectStorage.ObjectStat nidStat = objectStorage.stat(nidKey);
+        ObjectStorage.ObjectStat selfieStat = objectStorage.stat(selfieKey);
+        String selfieContentType = selfieStat.contentType();
+        boolean image = selfieContentType != null && selfieContentType.startsWith("image/");
+        if (nidStat.exists() && selfieStat.exists() && nidStat.size() > 0 && selfieStat.size() > 0 && image) {
+            return VerificationStatus.VERIFIED;
         }
+        return VerificationStatus.REJECTED;
     }
 }

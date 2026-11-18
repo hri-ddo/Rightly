@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rightly-platform"
+version = "0.1.0"
+description = "Dev tooling and future AI backend for the Rightly platform"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+ai = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+]
+
+[project.scripts]
+rightly = "rightly_dev.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rightly_dev*"]
