@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><title>RIGHTLY - Authentication &amp; Rapid Access</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#606049","outline":"#807663","inverse-surface":"#31312a","secondary":"#5f5e5c","secondary-fixed":"#e5e2de","on-surface-variant":"#4e4635","surface":"#fdf9ef","on-surface":"#1c1c16","inverse-on-surface":"#f4f0e6","on-primary-fixed-variant":"#5a4400","surface-variant":"#e6e2d8","tertiary-fixed":"#e6e4c7","outline-variant":"#d1c5af","on-secondary":"#ffffff","surface-container-high":"#ece8de","tertiary-fixed-dim":"#cac8ac","on-tertiary":"#ffffff","primary-fixed-dim":"#eec147","background":"#fdf9ef","surface-dim":"#dddad0","on-error-container":"#93000a","surface-tint":"#765a00","secondary-fixed-dim":"#c8c6c3","on-primary-fixed":"#251a00","on-error":"#ffffff","error":"#ba1a1a","on-secondary-fixed":"#1c1c1a","surface-container-highest":"#e6e2d8","surface-container-low":"#f7f3e9","on-primary":"#ffffff","surface-bright":"#fdf9ef","on-tertiary-container":"#4e4e38","primary":"#765a00","on-secondary-fixed-variant":"#474744","primary-fixed":"#ffdf96","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-tertiary-fixed":"#1c1c0a","inverse-primary":"#eec147","surface-container":"#f1eee4","on-tertiary-fixed-variant":"#484832","secondary-container":"#e5e2de","primary-container":"#e5b83f","on-background":"#1c1c16","tertiary-container":"#c1bfa3","on-primary-container":"#614900","on-secondary-container":"#656462"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xs":"0.25rem","margin":"3rem","space-xl":"2.5rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem"},fontFamily:{"display-lg-mobile":["Playfair Display"],"headline-md":["Playfair Display"],"body-md":["Inter"],"label-sm":["Inter"],"display-lg":["Playfair Display"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"title-lg":["Inter"],"headline-sm":["Playfair Display"],"label-md":["Inter"],"title-md":["Inter"]},fontSize:{"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["30px",{lineHeight:"38px",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"68px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"600"}],"title-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="w-full bg-inverse-surface text-inverse-on-surface px-6 py-2 flex items-center justify-between text-body-sm font-body-sm"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[16px]">shield</span><span>Confidential Legal and Medical Session Portal</span></span><a class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-DEFAULT bg-error text-on-error font-label-md text-label-md uppercase tracking-wider hover:bg-error/90 transition-colors" href="https://www.google.com/search?q=weather" rel="nofollow noopener noreferrer"><span class="material-symbols-outlined text-[14px]">close</span> Quick Exit</a></aside><main class="w-full flex items-center justify-center p-6 min-h-[calc(100vh-36px)]"><div class="flex flex-col w-full max-w-5xl mx-auto py-4 sm:py-8 px-2 sm:px-4">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Editorial & Security Context (5 cols) -->
+<div class="lg:col-span-5 flex flex-col space-y-6">
+<!-- Seal & Verification Badge -->
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container text-on-surface-variant rounded-DEFAULT text-label-sm font-label-sm uppercase tracking-wider shadow-sm">
+<span class="material-symbols-outlined text-primary text-[14px]">verified_user</span>
+          Bar Council Protocol Compliant
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container-high text-tertiary rounded-DEFAULT text-label-sm font-label-sm font-mono tracking-tight">
+          SESSION #BD-7731
+        </span>
+</div>
+<!-- Main Section Header -->
+<div class="space-y-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Two-Factor Clearance
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          To safeguard client-advocate confidentiality and ensure authenticated legal dockets remain strictly inviolable, we require secondary device clearance.
+        </p>
+</div>
+<!-- Security Metadata & Visual Stamp -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm space-y-4">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">gavel</span>
+</div>
+<div class="space-y-1">
+<h2 class="font-title-md text-title-md text-on-surface">Legal Telephony Mandate</h2>
+<p class="font-body-sm text-body-sm text-tertiary leading-normal">
+              Direct routing through BTRC-authorized judicial SMS gateway with zero metadata logging.
+            </p>
+</div>
+</div>
+<!-- Micro Graphic: Cryptographic Handshake visualization -->
+<div class="bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Cipher Status</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
+<span>AES-256-GCM / SHA-512</span>
+</div>
+</div>
+</div>
+<!-- Emergency Reassurance Contact Callout -->
+<div class="bg-surface-container-high p-4 rounded-xl flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-error text-[20px]">phone_in_talk</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Duress or Immediate Threat?</p>
+<p class="font-body-sm text-body-sm text-tertiary">Dial <strong class="text-on-surface">999</strong> (National) or <strong class="text-on-surface">109</strong> (Women/Child Helpline)</p>
+</div>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 rounded-DEFAULT bg-surface text-on-surface-variant font-mono">24/7 FREE</span>
+</div>
+</div>
+<!-- Right Column: Card with Interactive OTP Form (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-6 sm:p-10 rounded-xl shadow-md">
+<!-- Card Header -->
+<div class="space-y-2 mb-8">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Authentication Step 02 of 02</span>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+            Expires in <span class="font-mono text-on-surface font-semibold" id="timer-val">04:58</span>
+</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Verify Security Code</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          A 6-digit confirmation token was dispatched to:
+        </p>
+<!-- Recipient Badge with Edit action -->
+<div class="inline-flex items-center gap-3 py-1.5 px-3 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-[18px]">smartphone</span>
+<span class="font-mono text-title-md font-title-md text-on-surface tracking-wider">+880 1712-•••894</span>
+<button class="ml-2 font-label-md text-label-md text-primary hover:text-on-primary-container transition-colors underline underline-offset-4 cursor-pointer" type="button">
+            Edit Number
+          </button>
+</div>
+</div>
+<!-- OTP Form Container -->
+<form class="space-y-8" id="otp-form" onsubmit="event.preventDefault(); handleVerification();">
+<!-- 6-digit Pin Matrix -->
+<div class="space-y-3">
+<div class="flex items-center justify-between gap-2 sm:gap-3">
+<input autofocus="" class="otp-input w-11 h-14 sm:w-14 sm:h-16 text-center text-headline-md font-headline-md text-on-surface bg-surface-container-low rounded-lg shadow-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none transition-all" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text" value="4"/>
+<input class="otp-input w-11 h-14 sm:w-14 sm:h-16 text-center text-headline-md font-headline-md text-on-surface bg-surface-container-low rounded-lg shadow-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none transition-all" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text" value="8"/>
+<input class="otp-input w-11 h-14 sm:w-14 sm:h-16 text-center text-headline-md font-headline-md text-on-surface bg-surface-container-low rounded-lg shadow-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none transition-all" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text" value="2"/>
+<span class="text-tertiary-fixed-dim font-headline-md select-none">−</span>
+<input class="otp-input w-11 h-14 sm:w-14 sm:h-16 text-center text-headline-md font-headline-md text-on-surface bg-surface-container-low rounded-lg shadow-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none transition-all" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+<input class="otp-input w-11 h-14 sm:w-14 sm:h-16 text-center text-headline-md font-headline-md text-on-surface bg-surface-container-low rounded-lg shadow-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none transition-all" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+<input class="otp-input w-11 h-14 sm:w-14 sm:h-16 text-center text-headline-md font-headline-md text-on-surface bg-surface-container-low rounded-lg shadow-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none transition-all" inputmode="numeric" maxlength="1" pattern="[0-9]*" type="text"/>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-tertiary px-1">
+<span class="flex items-center gap-1.5">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Awaiting automatic detection...
+            </span>
+<span class="font-mono text-label-sm">KEY-ID: #894-AUTH</span>
+</div>
+</div>
+<!-- Submit & Validation Button -->
+<div class="space-y-4">
+<button class="w-full py-3.5 px-6 rounded-lg bg-primary-container text-on-primary-container font-title-md text-title-md hover:bg-primary-fixed-dim transition-all shadow-sm flex items-center justify-center gap-2 group cursor-pointer" id="submit-btn" type="submit">
+<span>Verify &amp; Enter Legal Portal</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<!-- Alternative Resend Mechanisms -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+<button class="py-2.5 px-3 bg-surface-container text-tertiary rounded-lg font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2 cursor-not-allowed opacity-75" disabled="" id="resend-sms-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Resend SMS (<span id="resend-timer">00:48</span>)</span>
+</button>
+<button class="py-2.5 px-3 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2 cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Voice Call (BTRC Approved)</span>
+</button>
+</div>
+<div class="text-center">
+<button class="inline-flex items-center gap-1.5 text-label-md font-label-md text-tertiary hover:text-on-surface transition-colors cursor-pointer py-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>
+              Receive code via Secure WhatsApp
+            </button>
+</div>
+</div>
+</form>
+<!-- Statutory Privilege Notice Box -->
+<div class="mt-8 p-4 rounded-lg bg-surface-container-low text-on-surface-variant space-y-2">
+<div class="flex items-center gap-2 text-primary font-semibold font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+          Statutory Confidentiality &amp; ICT Compliance
+        </div>
+<p class="font-body-sm text-body-sm leading-relaxed text-tertiary">
+          Under the Bangladesh Information &amp; Communication Technology Act (2006) and the Evidence Act provisions on digital verification, this OTP serves as a non-repudiable authorization. Rightly advocates and court coordinators will never solicit this code over phone, chat, or email.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const inputs = document.querySelectorAll('.otp-input');
+    const resendBtn = document.getElementById('resend-sms-btn');
+    const resendTimerSpan = document.getElementById('resend-timer');
+    const sessionTimerSpan = document.getElementById('timer-val');
+
+    // Auto-focus progression for 6-box input
+    inputs.forEach((input, idx) => {
+      input.addEventListener('input', (e) => {
+        const val = e.target.value;
+        if (val.length === 1 && idx < inputs.length - 1) {
+          inputs[idx + 1].focus();
+        }
+      });
+
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Backspace' && !input.value && idx > 0) {
+          inputs[idx - 1].focus();
+        }
+      });
+
+      input.addEventListener('paste', (e) => {
+        e.preventDefault();
+        const pasted = (e.clipboardData || window.clipboardData).getData('text').trim();
+        if (/^\d{6}$/.test(pasted)) {
+          pasted.split('').forEach((char, i) => {
+            if (inputs[i]) inputs[i].value = char;
+          });
+          inputs[inputs.length - 1].focus();
+        }
+      });
+    });
+
+    // Countdown logic for Resend action
+    let resendCountdown = 48;
+    const resendInterval = setInterval(() => {
+      resendCountdown--;
+      if (resendCountdown <= 0) {
+        clearInterval(resendInterval);
+        resendBtn.disabled = false;
+        resendBtn.classList.remove('cursor-not-allowed', 'opacity-75');
+        resendBtn.classList.add('text-on-surface', 'cursor-pointer');
+        resendBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">sync</span><span>Resend OTP via SMS</span>';
+      } else {
+        const s = resendCountdown < 10 ? '0' + resendCountdown : resendCountdown;
+        if (resendTimerSpan) resendTimerSpan.textContent = `00:${s}`;
+      }
+    }, 1000);
+
+    // Countdown logic for Session Validity
+    let sessionSeconds = 298; // 4m 58s
+    const sessionInterval = setInterval(() => {
+      sessionSeconds--;
+      if (sessionSeconds <= 0) {
+        clearInterval(sessionInterval);
+        if (sessionTimerSpan) sessionTimerSpan.textContent = '00:00';
+      } else {
+        const m = Math.floor(sessionSeconds / 60);
+        const s = sessionSeconds % 60;
+        const formatted = `0${m}:${s < 10 ? '0' : ''}${s}`;
+        if (sessionTimerSpan) sessionTimerSpan.textContent = formatted;
+      }
+    }, 1000);
+
+    window.handleVerification = function() {
+      const code = Array.from(inputs).map(i => i.value).join('');
+      const btn = document.getElementById('submit-btn');
+      if (code.length < 6) {
+        inputs.forEach(i => {
+          if (!i.value) {
+            i.classList.add('bg-error-container');
+            setTimeout(() => i.classList.remove('bg-error-container'), 1200);
+          }
+        });
+        return;
+      }
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Authenticating Credentials...</span>';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Access Granted</span>';
+        btn.classList.remove('bg-primary-container');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface');
+      }, 1000);
+    };
+  })();
+</script></main></body></html>

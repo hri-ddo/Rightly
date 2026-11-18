@@ -1,0 +1,682 @@
+{
+  "backend-java/pom.xml": {
+    "mtime": 1795003213.9617012,
+    "ast_hash": "ca05c6a8c848e6fbccbd56a2cd96dfbb",
+    "semantic_hash": "ca05c6a8c848e6fbccbd56a2cd96dfbb"
+  },
+  "backend-java/src/main/java/bd/rightly/RightlyApplication.java": {
+    "mtime": 1795003238.3486478,
+    "ast_hash": "bbd73c502ad95737fecbb19900dd8793",
+    "semantic_hash": "bbd73c502ad95737fecbb19900dd8793"
+  },
+  "backend-java/src/main/java/bd/rightly/config/AuthUserPrincipal.java": {
+    "mtime": 1795003249.0669181,
+    "ast_hash": "cb44dbe0684890e441f65fd9cfdc7626",
+    "semantic_hash": "cb44dbe0684890e441f65fd9cfdc7626"
+  },
+  "backend-java/src/main/java/bd/rightly/config/CorsConfig.java": {
+    "mtime": 1795003249.60928,
+    "ast_hash": "9644b61e9491d4fa696875260f4b3984",
+    "semantic_hash": "9644b61e9491d4fa696875260f4b3984"
+  },
+  "backend-java/src/main/java/bd/rightly/config/MinioConfig.java": {
+    "mtime": 1795003249.4334736,
+    "ast_hash": "736c77881cc09c5cb9db2be08175385e",
+    "semantic_hash": "736c77881cc09c5cb9db2be08175385e"
+  },
+  "backend-java/src/main/java/bd/rightly/config/ProfessionalSeedRunner.java": {
+    "mtime": 1795003304.7213356,
+    "ast_hash": "62bbb110352bf8c4a53b164e648733cb",
+    "semantic_hash": "62bbb110352bf8c4a53b164e648733cb"
+  },
+  "backend-java/src/main/java/bd/rightly/config/RedisConfig.java": {
+    "mtime": 1795003249.066975,
+    "ast_hash": "14957db08b17b5a6781a2d0235d15bc0",
+    "semantic_hash": "14957db08b17b5a6781a2d0235d15bc0"
+  },
+  "backend-java/src/main/java/bd/rightly/config/RightlyConfig.java": {
+    "mtime": 1795003249.0835345,
+    "ast_hash": "97af2be28a2f07721c93b82dba21c398",
+    "semantic_hash": "97af2be28a2f07721c93b82dba21c398"
+  },
+  "backend-java/src/main/java/bd/rightly/config/RightlyCorsProperties.java": {
+    "mtime": 1795003247.265741,
+    "ast_hash": "f45513e7b5c978197dc0fb6c641dacf7",
+    "semantic_hash": "f45513e7b5c978197dc0fb6c641dacf7"
+  },
+  "backend-java/src/main/java/bd/rightly/config/RightlyJwtProperties.java": {
+    "mtime": 1795003246.9487936,
+    "ast_hash": "49bb076883c1655b0eae6071a073945c",
+    "semantic_hash": "49bb076883c1655b0eae6071a073945c"
+  },
+  "backend-java/src/main/java/bd/rightly/config/RightlyMinioProperties.java": {
+    "mtime": 1795003247.4957566,
+    "ast_hash": "e0226283844ce03361734bd74c6c570f",
+    "semantic_hash": "e0226283844ce03361734bd74c6c570f"
+  },
+  "backend-java/src/main/java/bd/rightly/config/RightlyOtpProperties.java": {
+    "mtime": 1795003247.0563245,
+    "ast_hash": "1116fbaafde6950b1777d0f1f1b19238",
+    "semantic_hash": "1116fbaafde6950b1777d0f1f1b19238"
+  },
+  "backend-java/src/main/java/bd/rightly/config/SecurityConfig.java": {
+    "mtime": 1795003267.973499,
+    "ast_hash": "d7a2f87a8f0fde245299ce4f82872724",
+    "semantic_hash": "d7a2f87a8f0fde245299ce4f82872724"
+  },
+  "backend-java/src/main/java/bd/rightly/constant/CookieNames.java": {
+    "mtime": 1795003238.2740703,
+    "ast_hash": "48105eb607bf47aff7f0a356d22f6962",
+    "semantic_hash": "48105eb607bf47aff7f0a356d22f6962"
+  },
+  "backend-java/src/main/java/bd/rightly/constant/RedisKeys.java": {
+    "mtime": 1795003238.2547112,
+    "ast_hash": "2ca34c1ecfc29ba5d0fdace355524ee6",
+    "semantic_hash": "2ca34c1ecfc29ba5d0fdace355524ee6"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/AuthController.java": {
+    "mtime": 1795003338.0008469,
+    "ast_hash": "aad637e45ddd07c34b096323b4b591b7",
+    "semantic_hash": "aad637e45ddd07c34b096323b4b591b7"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/DashboardController.java": {
+    "mtime": 1795003338.2679944,
+    "ast_hash": "a2a2afec1ddf6458558e324e5d173348",
+    "semantic_hash": "a2a2afec1ddf6458558e324e5d173348"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/DirectoryController.java": {
+    "mtime": 1795003338.0991883,
+    "ast_hash": "927de63f1dd6e5d1946607a20ddd5a51",
+    "semantic_hash": "927de63f1dd6e5d1946607a20ddd5a51"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/HealthController.java": {
+    "mtime": 1795003337.7882369,
+    "ast_hash": "3e0500f5cebb169e25b97ea3585117c3",
+    "semantic_hash": "3e0500f5cebb169e25b97ea3585117c3"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/ProfileController.java": {
+    "mtime": 1795003338.2679956,
+    "ast_hash": "2cdb8c16bd85bddb9dbc24db2aa0429e",
+    "semantic_hash": "2cdb8c16bd85bddb9dbc24db2aa0429e"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/VerificationController.java": {
+    "mtime": 1795003338.1634939,
+    "ast_hash": "640c6d2a82a94000d29624a7adf95b84",
+    "semantic_hash": "640c6d2a82a94000d29624a7adf95b84"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/AuthSessionResult.java": {
+    "mtime": 1795003313.765571,
+    "ast_hash": "3b84b17fc2aa3b31752fea36e07116c8",
+    "semantic_hash": "3b84b17fc2aa3b31752fea36e07116c8"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/DashboardSummaryResponse.java": {
+    "mtime": 1795003313.745523,
+    "ast_hash": "ccdaf90abe4e038c1f69b5c998a85b2a",
+    "semantic_hash": "ccdaf90abe4e038c1f69b5c998a85b2a"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/DirectoryPageResponse.java": {
+    "mtime": 1795003313.7547486,
+    "ast_hash": "1726e192688e249de732f22c13c1f2df",
+    "semantic_hash": "1726e192688e249de732f22c13c1f2df"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/ErrorResponse.java": {
+    "mtime": 1795003265.6891875,
+    "ast_hash": "ae4a1ec53d95f79ecf1279fbbb3cd523",
+    "semantic_hash": "ae4a1ec53d95f79ecf1279fbbb3cd523"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/OtpContactRequest.java": {
+    "mtime": 1795003313.7546823,
+    "ast_hash": "d5f825031e8ecd6cdf1d8fcd15f4c51d",
+    "semantic_hash": "d5f825031e8ecd6cdf1d8fcd15f4c51d"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/OtpVerifyRequest.java": {
+    "mtime": 1795003313.3880723,
+    "ast_hash": "14bb1731cc4cdc2f481e367c8f4a960d",
+    "semantic_hash": "14bb1731cc4cdc2f481e367c8f4a960d"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/ProfessionalProfileResponse.java": {
+    "mtime": 1795003313.5056832,
+    "ast_hash": "cf215fd80ff79fbec7d7f96b0b560b7c",
+    "semantic_hash": "cf215fd80ff79fbec7d7f96b0b560b7c"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/ProfileUpdateRequest.java": {
+    "mtime": 1795003313.7547064,
+    "ast_hash": "6e1a4bc7b75b345ab13cf0929731cca2",
+    "semantic_hash": "6e1a4bc7b75b345ab13cf0929731cca2"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/RegisterRequest.java": {
+    "mtime": 1795003313.4918218,
+    "ast_hash": "7fc732471b07c00f5034f69286d8fbe8",
+    "semantic_hash": "7fc732471b07c00f5034f69286d8fbe8"
+  },
+  "backend-java/src/main/java/bd/rightly/controller/dto/UserResponse.java": {
+    "mtime": 1795003313.7655141,
+    "ast_hash": "b5c3b23b645852d326e3690dfc8c8252",
+    "semantic_hash": "b5c3b23b645852d326e3690dfc8c8252"
+  },
+  "backend-java/src/main/java/bd/rightly/middleware/ApiException.java": {
+    "mtime": 1795003265.182005,
+    "ast_hash": "616ea01f71152ac6130745cfaa5ac630",
+    "semantic_hash": "616ea01f71152ac6130745cfaa5ac630"
+  },
+  "backend-java/src/main/java/bd/rightly/middleware/CsrfValidationFilter.java": {
+    "mtime": 1795003261.8015058,
+    "ast_hash": "f43bacc63419d61d93d89124b1934707",
+    "semantic_hash": "f43bacc63419d61d93d89124b1934707"
+  },
+  "backend-java/src/main/java/bd/rightly/middleware/GlobalExceptionHandler.java": {
+    "mtime": 1795003264.8182359,
+    "ast_hash": "c4c6df18f76f6a41a6a0f8859e352769",
+    "semantic_hash": "c4c6df18f76f6a41a6a0f8859e352769"
+  },
+  "backend-java/src/main/java/bd/rightly/middleware/JwtAuthenticationFilter.java": {
+    "mtime": 1795003255.083614,
+    "ast_hash": "0cce6c0f97540e76e7d3e832615c7235",
+    "semantic_hash": "0cce6c0f97540e76e7d3e832615c7235"
+  },
+  "backend-java/src/main/java/bd/rightly/model/entity/ProfessionalProfile.java": {
+    "mtime": 1795003238.3717086,
+    "ast_hash": "213b5a815577c2b7bf08aa9d37cf5701",
+    "semantic_hash": "213b5a815577c2b7bf08aa9d37cf5701"
+  },
+  "backend-java/src/main/java/bd/rightly/model/entity/Role.java": {
+    "mtime": 1795003238.3551698,
+    "ast_hash": "68f2e751dbfbae4b695ae02282cd59fc",
+    "semantic_hash": "68f2e751dbfbae4b695ae02282cd59fc"
+  },
+  "backend-java/src/main/java/bd/rightly/model/entity/User.java": {
+    "mtime": 1795003238.2546518,
+    "ast_hash": "381799586fac64493b9067138031e8f4",
+    "semantic_hash": "381799586fac64493b9067138031e8f4"
+  },
+  "backend-java/src/main/java/bd/rightly/model/entity/VerificationStatus.java": {
+    "mtime": 1795003238.2691731,
+    "ast_hash": "0d861223ccfc7937a1291b8321f4c7e1",
+    "semantic_hash": "0d861223ccfc7937a1291b8321f4c7e1"
+  },
+  "backend-java/src/main/java/bd/rightly/model/repository/ProfessionalProfileRepository.java": {
+    "mtime": 1795003240.9906356,
+    "ast_hash": "b4ff80f59f32dd4fb8d178c16c8fabd5",
+    "semantic_hash": "b4ff80f59f32dd4fb8d178c16c8fabd5"
+  },
+  "backend-java/src/main/java/bd/rightly/model/repository/UserRepository.java": {
+    "mtime": 1795003240.0444252,
+    "ast_hash": "2e52da4238a4e729e6e13c856cf4b8ed",
+    "semantic_hash": "2e52da4238a4e729e6e13c856cf4b8ed"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/AuthService.java": {
+    "mtime": 1795003276.3851876,
+    "ast_hash": "28a62695ae86cf8f5e8886a439b3c5f3",
+    "semantic_hash": "28a62695ae86cf8f5e8886a439b3c5f3"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/DashboardService.java": {
+    "mtime": 1795003301.029876,
+    "ast_hash": "483506ada83ff0e1fe37efe1e260e2be",
+    "semantic_hash": "483506ada83ff0e1fe37efe1e260e2be"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/DirectoryService.java": {
+    "mtime": 1795003297.473249,
+    "ast_hash": "dee376418521e71bc123313411ef3b29",
+    "semantic_hash": "dee376418521e71bc123313411ef3b29"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/HealthService.java": {
+    "mtime": 1795003401.1160378,
+    "ast_hash": "8051a5713ec87f924d68a5f8e6cc2612",
+    "semantic_hash": "8051a5713ec87f924d68a5f8e6cc2612"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/IdentityVerifier.java": {
+    "mtime": 1795003276.3947067,
+    "ast_hash": "cecccbb33152bcd5b1573c0d6ec053c4",
+    "semantic_hash": "cecccbb33152bcd5b1573c0d6ec053c4"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/LocalIdentityVerifier.java": {
+    "mtime": 1795003276.394688,
+    "ast_hash": "48701520aaca1b9275a333e5e61c410f",
+    "semantic_hash": "48701520aaca1b9275a333e5e61c410f"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/LocalNotificationGateway.java": {
+    "mtime": 1795003268.2213364,
+    "ast_hash": "bd250f790094bf6615c8fd5d9888da39",
+    "semantic_hash": "bd250f790094bf6615c8fd5d9888da39"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/NotificationGateway.java": {
+    "mtime": 1795003267.9733858,
+    "ast_hash": "65797bb33a715e5d05c107ad3ce828d4",
+    "semantic_hash": "65797bb33a715e5d05c107ad3ce828d4"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/ProfileService.java": {
+    "mtime": 1795003300.2718565,
+    "ast_hash": "374469aa574406364a76028b5e1b3a55",
+    "semantic_hash": "374469aa574406364a76028b5e1b3a55"
+  },
+  "backend-java/src/main/java/bd/rightly/model/service/VerificationService.java": {
+    "mtime": 1795003315.1900697,
+    "ast_hash": "b3d76b71acc5753fb5c27ab09125ae3d",
+    "semantic_hash": "b3d76b71acc5753fb5c27ab09125ae3d"
+  },
+  "backend-java/src/main/java/bd/rightly/util/CookieUtils.java": {
+    "mtime": 1795003244.6405675,
+    "ast_hash": "9a8398cfe40650576dcc4761373365cf",
+    "semantic_hash": "9a8398cfe40650576dcc4761373365cf"
+  },
+  "backend-java/src/main/java/bd/rightly/util/CsrfTokenGenerator.java": {
+    "mtime": 1795003243.0203996,
+    "ast_hash": "2c798bd68b5dc49455fbdffcae0d6f1c",
+    "semantic_hash": "2c798bd68b5dc49455fbdffcae0d6f1c"
+  },
+  "backend-java/src/main/java/bd/rightly/util/JwtService.java": {
+    "mtime": 1795003241.9088867,
+    "ast_hash": "2c79ec765e7ace4ce06b84bd0a847d2a",
+    "semantic_hash": "2c79ec765e7ace4ce06b84bd0a847d2a"
+  },
+  "backend-java/src/main/java/bd/rightly/util/OtpHasher.java": {
+    "mtime": 1795003243.0206068,
+    "ast_hash": "6671f12d261c810ab6e5696ea88206c0",
+    "semantic_hash": "6671f12d261c810ab6e5696ea88206c0"
+  },
+  "backend-java/src/main/java/bd/rightly/util/SecurityUtils.java": {
+    "mtime": 1795003350.2035136,
+    "ast_hash": "6c393be95fc79caaf18123dff97bdb0f",
+    "semantic_hash": "6c393be95fc79caaf18123dff97bdb0f"
+  },
+  "backend-java/src/main/resources/db/migration/V1__init_core.sql": {
+    "mtime": 1795003216.1752024,
+    "ast_hash": "b488cca462a28a252f2e55a08f43c525",
+    "semantic_hash": "b488cca462a28a252f2e55a08f43c525"
+  },
+  "backend-java/src/main/resources/db/migration/V2__directory_and_messaging.sql": {
+    "mtime": 1795003225.144816,
+    "ast_hash": "ba0eed434beaa4eae74c088c0b73bbaa",
+    "semantic_hash": "ba0eed434beaa4eae74c088c0b73bbaa"
+  },
+  "backend-java/src/main/resources/db/migration/V3__community_and_safety.sql": {
+    "mtime": 1795003221.8066866,
+    "ast_hash": "d71dacb3a2e72f871ce7a11277ecd6cd",
+    "semantic_hash": "d71dacb3a2e72f871ce7a11277ecd6cd"
+  },
+  "backend-java/src/main/resources/db/migration/V4__ai.sql": {
+    "mtime": 1795003221.8059893,
+    "ast_hash": "f30d98592f6bee30a245323021e26a59",
+    "semantic_hash": "f30d98592f6bee30a245323021e26a59"
+  },
+  "backend-java/src/test/java/bd/rightly/model/service/AuthServiceTest.java": {
+    "mtime": 1795003401.0916247,
+    "ast_hash": "90adb1fc0a03a087e5ce55bff0745422",
+    "semantic_hash": "90adb1fc0a03a087e5ce55bff0745422"
+  },
+  "frontend/.impeccable/hook.cache.json": {
+    "mtime": 1795003675.6313102,
+    "ast_hash": "635dfb74b089dd6587d7965cef4068e8",
+    "semantic_hash": ""
+  },
+  "frontend/.oxlintrc.json": {
+    "mtime": 1795003470.8861763,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": ""
+  },
+  "frontend/package.json": {
+    "mtime": 1795003658.3088186,
+    "ast_hash": "74e2d2bca2133251b599b6cada9d8c0f",
+    "semantic_hash": ""
+  },
+  "frontend/src/App.tsx": {
+    "mtime": 1795003658.3089626,
+    "ast_hash": "304f393b15097a86fd5a115ecce4e864",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/CrisisBar.tsx": {
+    "mtime": 1795003617.6322868,
+    "ast_hash": "b0778b7d20f055964a74489dd33ce656",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/ProfessionalCard.tsx": {
+    "mtime": 1795003623.1319835,
+    "ast_hash": "843d3092d1b12d93361c8ce98d85241b",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/RequireAuth.tsx": {
+    "mtime": 1795003627.3752158,
+    "ast_hash": "58d43d9ada75657c1ccf3c149c187496",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/SiteFooter.tsx": {
+    "mtime": 1795003622.63364,
+    "ast_hash": "24ee73f87e3d3012ed0fee07b620f945",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/SiteHeader.tsx": {
+    "mtime": 1795003622.948225,
+    "ast_hash": "2608143927008b598afbd630d45a09b3",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/VerificationBadge.tsx": {
+    "mtime": 1795003622.8515604,
+    "ast_hash": "9a43526650a9170dadb568302dd92d0a",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/ui/Alert.tsx": {
+    "mtime": 1795003610.9923391,
+    "ast_hash": "a754de50922a0065c054f118a3ca5c81",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/ui/Button.tsx": {
+    "mtime": 1795003610.9914622,
+    "ast_hash": "e8069d24e3617146bcfe1975d3132ad7",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/ui/Input.tsx": {
+    "mtime": 1795003610.991407,
+    "ast_hash": "5a88a4f0e7a92cdb602e463547408a44",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/ui/PageStates.tsx": {
+    "mtime": 1795003617.640918,
+    "ast_hash": "c956412aa8642e884ca86834f8e00c77",
+    "semantic_hash": ""
+  },
+  "frontend/src/context/AuthContext.tsx": {
+    "mtime": 1795003610.8635375,
+    "ast_hash": "052decbc8404538f14bf49f7400cf450",
+    "semantic_hash": ""
+  },
+  "frontend/src/hooks/useAsyncResource.ts": {
+    "mtime": 1795003610.8635442,
+    "ast_hash": "36f05f4d16c63788ffa744b1e28da0bc",
+    "semantic_hash": ""
+  },
+  "frontend/src/hooks/useQuickExit.ts": {
+    "mtime": 1795003610.8635418,
+    "ast_hash": "4de1088aef91039d29e848423f6e6e25",
+    "semantic_hash": ""
+  },
+  "frontend/src/layouts/SafetyLayout.tsx": {
+    "mtime": 1795003623.4166946,
+    "ast_hash": "6fa1d688803cbb81414732c17d0102fb",
+    "semantic_hash": ""
+  },
+  "frontend/src/main.tsx": {
+    "mtime": 1795003658.3088684,
+    "ast_hash": "713d03ea575f4f566206a33227368652",
+    "semantic_hash": ""
+  },
+  "frontend/src/routes/AppRouter.tsx": {
+    "mtime": 1795003658.3064766,
+    "ast_hash": "5ec4b792a989077f9b3b216e05382fc0",
+    "semantic_hash": ""
+  },
+  "frontend/src/services/apiClient.ts": {
+    "mtime": 1795003601.8864787,
+    "ast_hash": "712f81b6eb9890cffc4d81348d467232",
+    "semantic_hash": ""
+  },
+  "frontend/src/services/authService.ts": {
+    "mtime": 1795003622.2584484,
+    "ast_hash": "394829b00306b228afee62fbc45aa64c",
+    "semantic_hash": ""
+  },
+  "frontend/src/services/dashboardService.ts": {
+    "mtime": 1795003602.5884032,
+    "ast_hash": "adee5a8c023d8c478aa8c2ad1ea5eb0e",
+    "semantic_hash": ""
+  },
+  "frontend/src/services/directoryService.ts": {
+    "mtime": 1795003602.698238,
+    "ast_hash": "909466065a86ef7d3c7819b4c0410247",
+    "semantic_hash": ""
+  },
+  "frontend/src/services/profileService.ts": {
+    "mtime": 1795003603.1362276,
+    "ast_hash": "1a98545fecb05893fcab6a90c03c1797",
+    "semantic_hash": ""
+  },
+  "frontend/src/services/verificationService.ts": {
+    "mtime": 1795003602.912754,
+    "ast_hash": "f76b2b6dd69f9459bfc83b5fcfa69a4e",
+    "semantic_hash": ""
+  },
+  "frontend/src/types/api.ts": {
+    "mtime": 1795003610.8422174,
+    "ast_hash": "8a8ff8492465e841a417373a1a629d8a",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/cookies.ts": {
+    "mtime": 1795003601.8820353,
+    "ast_hash": "76b4b29a2914cf6ef270ff03e914e96f",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/formatError.ts": {
+    "mtime": 1795003601.871313,
+    "ast_hash": "0eaa6a13d69ffb6df9232e9692438e56",
+    "semantic_hash": ""
+  },
+  "frontend/src/utils/quickExit.ts": {
+    "mtime": 1795003601.871245,
+    "ast_hash": "cf328e5f2aa563a9bc111604d3271653",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/CreateAccountView.tsx": {
+    "mtime": 1795003668.976427,
+    "ast_hash": "c66691b9545d3899690468472ec7e1ef",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/DashboardView.tsx": {
+    "mtime": 1795003660.9692912,
+    "ast_hash": "53332b25106d3eb3b4261b1f7e6d4f88",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/DirectoryView.tsx": {
+    "mtime": 1795003675.572602,
+    "ast_hash": "16f7f601f7995df1c40b1d1b6e569fae",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/EmergencyView.tsx": {
+    "mtime": 1795003627.3752081,
+    "ast_hash": "eb634fad53a0e623c358adc98e04cf62",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/HomeView.tsx": {
+    "mtime": 1795003630.3518372,
+    "ast_hash": "ee2120b01a927ac383979f4f65620a5f",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/OtpVerificationView.tsx": {
+    "mtime": 1795003669.5380056,
+    "ast_hash": "3d9b2cf7854a8372061fc7a4032874ad",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/PlaceholderView.tsx": {
+    "mtime": 1795003627.639465,
+    "ast_hash": "3f4457bf4b05aae8bcf1c378307dd7f6",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/ProfileEditView.tsx": {
+    "mtime": 1795003669.1793828,
+    "ast_hash": "b62b68a5c923d277b48cdd2eca91c4ed",
+    "semantic_hash": ""
+  },
+  "frontend/src/views/VerifyView.tsx": {
+    "mtime": 1795003669.1800086,
+    "ast_hash": "e73ee557ff896653057a2285e2ae8b22",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.app.json": {
+    "mtime": 1795003470.8886716,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.json": {
+    "mtime": 1795003470.8898673,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.node.json": {
+    "mtime": 1795003470.8901036,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": ""
+  },
+  "frontend/vite.config.ts": {
+    "mtime": 1795003588.9999013,
+    "ast_hash": "f9e50c68f80491e1269f91bfbd756b62",
+    "semantic_hash": ""
+  },
+  ".cursor/plans/rightly_platform_build_plan_7e24bba7.plan.md": {
+    "mtime": 1795002315.0916796,
+    "ast_hash": "5e0073bbf3296457cba234db76ec2345",
+    "semantic_hash": ""
+  },
+  "ARCHITECTURE.md": {
+    "mtime": 1795003352.0448103,
+    "ast_hash": "3189f71c931befe2845a619aa38a1ac1",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1795003350.894003,
+    "ast_hash": "3f1a803d8bd0d1091745af86a7f45c1a",
+    "semantic_hash": ""
+  },
+  "backend-java/src/main/resources/application.yml": {
+    "mtime": 1795003216.1738381,
+    "ast_hash": "95781020c4bd865e8927af64f056a1e6",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1795003349.5106056,
+    "ast_hash": "f888f9e0321241998fbc1b4d3c72cc91",
+    "semantic_hash": ""
+  },
+  "frontend/DESIGN.md": {
+    "mtime": 1795003558.7717056,
+    "ast_hash": "a610604c3a152e6cb71ea0fecb2b74c1",
+    "semantic_hash": ""
+  },
+  "frontend/README.md": {
+    "mtime": 1795003470.8856049,
+    "ast_hash": "10495bfcc6c568eca4dab6dd5df795d3",
+    "semantic_hash": ""
+  },
+  "frontend/index.html": {
+    "mtime": 1795003589.8759613,
+    "ast_hash": "c9e69f3656ac792d3d533559796d303c",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/create_account_rightly/code.html": {
+    "mtime": 1794981430.0,
+    "ast_hash": "a2809ecd4c3ed170c15bb170816a4b2f",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/find_a_professional_directory/code.html": {
+    "mtime": 1794981430.0,
+    "ast_hash": "81f062f7f462770336d6b710a532d251",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/identity_nid_verification_rightly/code.html": {
+    "mtime": 1794981430.0,
+    "ast_hash": "16f1306640b59e6cf55e1bf4c830eca1",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/juris_haven/DESIGN.md": {
+    "mtime": 1794981430.0,
+    "ast_hash": "a610604c3a152e6cb71ea0fecb2b74c1",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/otp_verification_rightly/code.html": {
+    "mtime": 1794981430.0,
+    "ast_hash": "fec62522b1d47e36ec9636240a16b9d3",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/rightly_landing_page/code.html": {
+    "mtime": 1794981430.0,
+    "ast_hash": "286ec51a727b45c7be9c11431a8bb4a2",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/user_dashboard_rightly/code.html": {
+    "mtime": 1794981430.0,
+    "ast_hash": "e917e3ea959d1810b5a6274d52d233bb",
+    "semantic_hash": ""
+  },
+  "plantuml.com_plantuml_dual.html.pdf": {
+    "mtime": 1794837568.3203642,
+    "ast_hash": "cb1c39f8856053a867e5e233b0584c1d",
+    "semantic_hash": ""
+  },
+  "Class_diagram.png": {
+    "mtime": 1794837358.7243564,
+    "ast_hash": "491d4c9edaec90227104861864be1955",
+    "semantic_hash": ""
+  },
+  "frontend/public/favicon.svg": {
+    "mtime": 1795003591.20105,
+    "ast_hash": "0827d1208de4db9f539aa20915b53abc",
+    "semantic_hash": ""
+  },
+  "frontend/public/icons.svg": {
+    "mtime": 1795003470.886852,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": ""
+  },
+  "frontend/src/assets/hero.png": {
+    "mtime": 1795003470.8875785,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": ""
+  },
+  "frontend/src/assets/react.svg": {
+    "mtime": 1795003470.887747,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": ""
+  },
+  "frontend/src/assets/vite.svg": {
+    "mtime": 1795003470.8879273,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/create_account_rightly/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "4aff6f930d68057d0058f7f014b6cc4d",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/find_a_professional_directory/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "823f6e26a10ff9f5ccbd87b9db784db5",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/identity_nid_verification_rightly/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "2f17f78cdf729b3476a6649ac22fec1d",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/image.png_1/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "9f6a2cec23db6f355ef56a682ad8946b",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/image.png_2/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "dca41c1ffb7e219794115af89fe4d055",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/image.png_3/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "d6cf712550d3f3f97587ba778e11fc3c",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/image.png_4/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "6441b5eb1398d14f8644e9b5afc7b1df",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/otp_verification_rightly/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "f26dceb453391a4f3793bed4a7dc1d5c",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/rightly_landing_page/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "c778819a7058eaac207a6594463611a8",
+    "semantic_hash": ""
+  },
+  "stitch_rightly_legaltech_ui_platform/user_dashboard_rightly/screen.png": {
+    "mtime": 1794981430.0,
+    "ast_hash": "339e47b07f29ba69cb442eb915e3a6e6",
+    "semantic_hash": ""
+  }
+}

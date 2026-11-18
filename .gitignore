@@ -1,0 +1,32 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Java / Maven
+backend-java/target/
+backend-java/.classpath
+backend-java/.project
+backend-java/.settings/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python / AI
+backend-ai/.venv/
+backend-ai/__pycache__/
+backend-ai/.pytest_cache/
+backend-ai/*.egg-info/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+.DS_Store
+
+# Uploads / local artifacts
+uploads/
+*.log

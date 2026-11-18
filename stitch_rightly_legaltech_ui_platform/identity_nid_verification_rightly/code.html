@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><title>RIGHTLY - Authentication &amp; Rapid Access</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#606049","outline":"#807663","inverse-surface":"#31312a","secondary":"#5f5e5c","secondary-fixed":"#e5e2de","on-surface-variant":"#4e4635","surface":"#fdf9ef","on-surface":"#1c1c16","inverse-on-surface":"#f4f0e6","on-primary-fixed-variant":"#5a4400","surface-variant":"#e6e2d8","tertiary-fixed":"#e6e4c7","outline-variant":"#d1c5af","on-secondary":"#ffffff","surface-container-high":"#ece8de","tertiary-fixed-dim":"#cac8ac","on-tertiary":"#ffffff","primary-fixed-dim":"#eec147","background":"#fdf9ef","surface-dim":"#dddad0","on-error-container":"#93000a","surface-tint":"#765a00","secondary-fixed-dim":"#c8c6c3","on-primary-fixed":"#251a00","on-error":"#ffffff","error":"#ba1a1a","on-secondary-fixed":"#1c1c1a","surface-container-highest":"#e6e2d8","surface-container-low":"#f7f3e9","on-primary":"#ffffff","surface-bright":"#fdf9ef","on-tertiary-container":"#4e4e38","primary":"#765a00","on-secondary-fixed-variant":"#474744","primary-fixed":"#ffdf96","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-tertiary-fixed":"#1c1c0a","inverse-primary":"#eec147","surface-container":"#f1eee4","on-tertiary-fixed-variant":"#484832","secondary-container":"#e5e2de","primary-container":"#e5b83f","on-background":"#1c1c16","tertiary-container":"#c1bfa3","on-primary-container":"#614900","on-secondary-container":"#656462"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xs":"0.25rem","margin":"3rem","space-xl":"2.5rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","space-md":"1rem","space-sm":"0.5rem","gutter":"1.5rem"},fontFamily:{"display-lg-mobile":["Playfair Display"],"headline-md":["Playfair Display"],"body-md":["Inter"],"label-sm":["Inter"],"display-lg":["Playfair Display"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"title-lg":["Inter"],"headline-sm":["Playfair Display"],"label-md":["Inter"],"title-md":["Inter"]},fontSize:{"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["30px",{lineHeight:"38px",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"600"}],"display-lg":["56px",{lineHeight:"68px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"600"}],"title-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="w-full bg-inverse-surface text-inverse-on-surface px-6 py-2 flex items-center justify-between text-body-sm font-body-sm"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[16px]">shield</span><span>Confidential Legal and Medical Session Portal</span></span><a class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-DEFAULT bg-error text-on-error font-label-md text-label-md uppercase tracking-wider hover:bg-error/90 transition-colors" href="https://www.google.com/search?q=weather" rel="nofollow noopener noreferrer"><span class="material-symbols-outlined text-[14px]">close</span> Quick Exit</a></aside><main class="w-full flex items-center justify-center p-6 min-h-[calc(100vh-36px)]"><div class="flex flex-col w-full max-w-5xl mx-auto py-4 sm:py-8 px-2 sm:px-4">
+<!-- Confidentiality Protocol Header Banner -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-surface-container-low px-6 py-4 rounded-xl shadow-sm mb-8">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Institutional Citizen Verification</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider">Level 3 Clearance</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Session ID: BD-SEC-9844-LEGAL • Governed under Digital Security Act, 2018</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-[#3d7a5a] animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface">256-Bit Hardware Encrypted</span>
+</div>
+</div>
+<!-- Stepper Indicator -->
+<div class="w-full bg-surface-container-lowest p-6 rounded-xl shadow-sm mb-8">
+<div class="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<!-- Background Connecting Line for Desktop -->
+<div class="hidden md:block absolute top-1/2 left-8 right-8 -translate-y-1/2 h-0.5 bg-surface-container-high -z-0"></div>
+<!-- Step 1: Completed -->
+<div class="flex items-center gap-3 z-10 bg-surface-container-lowest pr-4">
+<div class="w-10 h-10 rounded-full bg-[#e7f3ec] text-[#2e6945] flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary">Step 01</span>
+<span class="block font-title-md text-title-md text-on-surface">Account Setup</span>
+</div>
+</div>
+<!-- Step 2: Active -->
+<div class="flex items-center gap-3 z-10 bg-surface-container-lowest px-4">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container font-title-md text-title-md flex items-center justify-center shadow-sm ring-4 ring-primary-container/20">
+          2
+        </div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Step 02 • In Progress</span>
+<span class="block font-title-md text-title-md text-on-surface font-semibold">National ID (NID)</span>
+</div>
+</div>
+<!-- Step 3: Upcoming -->
+<div class="flex items-center gap-3 z-10 bg-surface-container-lowest px-4 opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-secondary font-title-md text-title-md flex items-center justify-center">
+          3
+        </div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary">Step 03</span>
+<span class="block font-title-md text-title-md text-on-surface">Liveness Selfie</span>
+</div>
+</div>
+<!-- Step 4: Upcoming -->
+<div class="flex items-center gap-3 z-10 bg-surface-container-lowest pl-4 opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-secondary font-title-md text-title-md flex items-center justify-center">
+          4
+        </div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary">Step 04</span>
+<span class="block font-title-md text-title-md text-on-surface">Review &amp; Seal</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left 8 Columns: Upload Interfaces -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Card Shell -->
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-md">
+<!-- Header Text -->
+<div class="mb-8">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-3">
+<span class="material-symbols-outlined text-[14px]">assured_workload</span>
+            National Identity Regulatory Standard
+          </div>
+<h1 class="font-headline-md text-headline-md text-on-surface mb-3 tracking-tight">Verify Your Identity with National ID (NID)</h1>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+            To protect community integrity and prevent fraud, Bangladesh regulations require government-issued NID verification. Your documents are stored with 256-bit encryption and are never shared publicly.
+          </p>
+</div>
+<!-- Document Type Selector -->
+<div class="grid grid-cols-2 gap-3 mb-6 bg-surface-container-low p-1.5 rounded-lg">
+<button class="py-2.5 px-4 rounded-DEFAULT bg-surface-container-lowest text-on-surface font-title-md text-title-md shadow-sm flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">badge</span>
+            Smart NID (10-Digit)
+          </button>
+<button class="py-2.5 px-4 rounded-DEFAULT text-secondary hover:text-on-surface font-title-md text-title-md flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+            Classic Paper / Laminated (17-Digit)
+          </button>
+</div>
+<!-- Upload Module 1: Front Side (Simulated Active State / Success Upload) -->
+<div class="mb-6">
+<div class="flex items-center justify-between mb-2">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span>Front Side of NID</span>
+<span class="text-error font-body-sm text-body-sm">*</span>
+</label>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-medium">Smart Card Front Face</span>
+</div>
+<!-- Uploaded Card Preview State -->
+<div class="bg-surface-container-low p-4 sm:p-5 rounded-xl shadow-sm relative overflow-hidden">
+<div class="flex flex-col sm:flex-row items-center gap-5">
+<!-- NID Physical Mockup Card -->
+<div class="relative w-full sm:w-56 h-36 rounded-lg bg-surface-container-high overflow-hidden shadow-inner flex-shrink-0 flex flex-col justify-between p-3">
+<div class="absolute inset-0 opacity-10 bg-gradient-to-tr from-primary to-transparent pointer-events-none"></div>
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">account_balance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold leading-tight uppercase">Govt. of Bangladesh</span>
+</div>
+<div class="w-4 h-5 rounded-DEFAULT bg-primary-container/60 shadow-xs"></div>
+</div>
+<div class="flex items-center gap-3 my-auto">
+<div class="w-12 h-14 bg-surface-container-highest rounded flex items-center justify-center overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Official passport identification photo portrait with neutral expression, crisp lighting, deep cream studio background matching archival editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7dTJIfxzHhuKYkDvtIFooPq8osJRPwwo2tvFcQXeQmPG8TcgX3YzsVHTPZrc74fVzFHBOwP4Y42AhkR5sawY57VhmNpeUKMivRP0Y7TF7NMwB7Q8hSpljMH6TBsHdbX8Xrq50bsKrcS6CdU6D83wGDdbEXyetLty-QnZ-8MeBMSCh2EMn_TYLg19vhd0D_SEfVy-g1OtLQvvcsG-ff9JMaQvZ-7IAzqdwX09D-S0"/>
+</div>
+<div class="space-y-1">
+<div class="h-2 w-20 bg-secondary/30 rounded"></div>
+<div class="h-2 w-16 bg-secondary/20 rounded"></div>
+<div class="h-2 w-24 bg-primary/40 rounded mt-1"></div>
+</div>
+</div>
+<div class="flex justify-between items-end text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-semibold tracking-widest">NID: 593 204 8812</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">fingerprint</span>
+</div>
+</div>
+<!-- Meta & Controls -->
+<div class="flex-1 w-full flex flex-col justify-between space-y-3">
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold truncate">NID_Front_Scanned.jpg</h4>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#e7f3ec] text-[#2e6945] font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Clear &amp; Legible
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">2.4 MB • Uploaded via Camera Scan • Format verified</p>
+</div>
+<!-- Extracted Metadata Chips -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-lowest p-2.5 rounded-lg shadow-xs">
+<div>
+<span class="block font-label-sm text-label-sm text-tertiary uppercase">Name Detected</span>
+<span class="block font-body-sm text-body-sm font-semibold text-on-surface">DR. R. CHOWDHURY</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-tertiary uppercase">Matched Digits</span>
+<span class="block font-body-sm text-body-sm font-semibold text-on-surface">10 / 10 Validated</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-3 pt-1">
+<button class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:underline" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Preview Scan
+                  </button>
+<span class="text-surface-variant">•</span>
+<button class="inline-flex items-center gap-1.5 font-label-md text-label-md text-error font-medium hover:underline" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span> Replace File
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Upload Module 2: Back Side (Awaiting Upload Zone) -->
+<div class="mb-8">
+<div class="flex items-center justify-between mb-2">
+<label class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span>Back Side of NID</span>
+<span class="text-error font-body-sm text-body-sm">*</span>
+</label>
+<span class="font-body-sm text-body-sm text-secondary">Address, blood group, &amp; barcode barcode data</span>
+</div>
+<div class="bg-surface-container-low hover:bg-surface-container transition-colors rounded-xl p-8 text-center cursor-pointer group shadow-sm flex flex-col items-center justify-center relative" id="drop-zone">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest group-hover:scale-105 transition-transform flex items-center justify-center shadow-sm mb-3 text-secondary group-hover:text-primary">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface mb-1">Drag and drop back side scan here</h4>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Supported formats: JPG, PNG, PDF (Max file size: 10 MB)</p>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-title-md text-title-md rounded-DEFAULT shadow-sm flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+                Browse Files
+              </button>
+<button class="px-4 py-2 bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-title-md text-title-md rounded-DEFAULT shadow-sm flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+                Use Mobile Camera
+              </button>
+</div>
+<input accept="image/jpeg,image/png,application/pdf" class="hidden" id="back-file-input" type="file"/>
+</div>
+</div>
+<!-- Primary & Secondary Navigation Actions -->
+<div class="pt-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-4 bg-surface-container-lowest">
+<button class="w-full sm:w-auto px-5 py-2.5 rounded-DEFAULT bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+            Save &amp; Exit
+          </button>
+<button class="w-full sm:w-auto px-7 py-3 rounded-DEFAULT bg-primary-container hover:bg-[#d4a52a] text-on-primary-container font-title-md text-title-md font-semibold transition-all shadow-md flex items-center justify-center gap-2" type="button">
+<span>Proceed to Selfie Verification</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Trust & Accreditation Badges Footer Banner -->
+<div class="bg-surface-container-low px-6 py-4 rounded-xl shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-[#e7f3ec] text-[#2e6945] flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary">
+            Verified directly through the Bangladesh Election Commission secure NID verification gateway (Porichoy Integration Protocol).
+          </span>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">ISO 27001 Certified</span>
+</div>
+</div>
+</div>
+<!-- Right 4 Columns: Verification Guidelines & Reassurance Context -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Verification Guidelines Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-md">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-[22px]">fact_check</span>
+<h3 class="font-title-lg text-title-lg text-on-surface tracking-tight">Verification Guidelines</h3>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">
+          High accuracy prevents automated rejection. Review these standards prior to moving to the biometric stage:
+        </p>
+<ul class="space-y-3.5 mb-6">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 rounded-full bg-[#e7f3ec] text-[#2e6945] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-medium">All 10 or 17 digits clearly visible:</strong> The numerical registry must be free of glare or light reflection.
+            </span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 rounded-full bg-[#e7f3ec] text-[#2e6945] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-medium">No glare, shadows, or cropped edges:</strong> Entire card perimeter must rest inside the frame borders.
+            </span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 rounded-full bg-[#e7f3ec] text-[#2e6945] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-medium">Matches your legal name:</strong> Spelled exactly as recorded with bar council or clinical practice certifications.
+            </span>
+</li>
+</ul>
+<!-- Visual Example Don'ts / Do's -->
+<div class="p-3 bg-surface-container-low rounded-lg">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary mb-2 font-semibold">Common Invalidation Causes</span>
+<div class="grid grid-cols-2 gap-2 text-center">
+<div class="bg-surface-container-lowest p-2 rounded shadow-xs">
+<span class="material-symbols-outlined text-error text-[20px] block mx-auto mb-1">highlight_off</span>
+<span class="font-label-sm text-label-sm text-secondary block">Flash Glare</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded shadow-xs">
+<span class="material-symbols-outlined text-error text-[20px] block mx-auto mb-1">crop</span>
+<span class="font-label-sm text-label-sm text-secondary block">Cut-off Edges</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Why We Verify Reassurance Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-md">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-tertiary text-[20px]">policy</span>
+<h3 class="font-title-md text-title-md text-on-surface">Our Privacy Commitment</h3>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-4">
+          In cases of trauma, domestic dispute, or clinical intervention, client records must remain invulnerable to identity impersonation.
+        </p>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">no_photography</span>
+<div class="text-left">
+<span class="block font-label-md text-label-md font-semibold text-on-surface">No Public Display</span>
+<span class="block font-body-sm text-body-sm text-tertiary">Never displayed on consultations or public directory profiles</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_delete</span>
+<div class="text-left">
+<span class="block font-label-md text-label-md font-semibold text-on-surface">Automated Redaction</span>
+<span class="block font-body-sm text-body-sm text-tertiary">Sensitive serial numbers cryptographically masked</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Assistance Contact -->
+<div class="bg-surface-container-high/60 p-5 rounded-xl shadow-xs">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0">support_agent</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Stuck with your physical NID?</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1 mb-3">
+              If your card is misplaced or awaiting re-issuance from Nirbachan Bhaban, our verified paralegal intake officer can assist.
+            </p>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold hover:underline flex items-center gap-1" href="#">
+              Contact Compliance Desk <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction for simulated upload zone
+  const dropZone = document.getElementById('drop-zone');
+  const fileInput = document.getElementById('back-file-input');
+
+  if (dropZone && fileInput) {
+    dropZone.addEventListener('click', () => {
+      fileInput.click();
+    });
+
+    ['dragenter', 'dragover'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.add('bg-surface-container-highest');
+      }, false);
+    });
+
+    ['dragleave', 'drop'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('bg-surface-container-highest');
+      }, false);
+    });
+  }
+</script></main></body></html>
