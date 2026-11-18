@@ -1,4 +1,4 @@
-# Rightly Platform (CSE370 MVP)
+# Rightly Platform
 
 Rightly is a legal advocacy and psychological support platform for Bangladesh, built as a four-sprint MVC stack: **Spring Boot** (model/controller), **React/Vite** (view), and **FastAPI** (AI — Sprint 4).
 
