@@ -112,11 +112,15 @@ public class AuthService {
                 .set(sendKey, "1", Duration.ofSeconds(otpProperties.sendCooldownSeconds()));
 
         String message = "Your Rightly verification code is: " + otp;
-        if (user.getEmail() != null) {
-            notificationGateway.sendEmail(user.getEmail(), "Rightly OTP", message);
-        }
-        if (user.getPhone() != null) {
-            notificationGateway.sendSms(user.getPhone(), message);
+        try {
+            if (user.getEmail() != null) {
+                notificationGateway.sendEmail(user.getEmail(), "Rightly OTP", message);
+            }
+            if (user.getPhone() != null) {
+                notificationGateway.sendSms(user.getPhone(), message);
+            }
+        } catch (IllegalStateException ex) {
+            throw new ApiException(HttpStatus.SERVICE_UNAVAILABLE, ex.getMessage());
         }
     }
 

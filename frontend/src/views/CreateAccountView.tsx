@@ -25,17 +25,24 @@ export function CreateAccountView() {
     }
     setLoading(true)
     try {
+      const trimmedEmail = email.trim() || undefined
+      const trimmedPhone = phone.trim() || undefined
       await authService.register({
         role,
         fullName: fullName.trim(),
-        email: email.trim() || undefined,
-        phone: phone.trim() || undefined,
+        email: trimmedEmail,
+        phone: trimmedPhone,
+      })
+      await authService.requestOtp({
+        email: trimmedEmail,
+        phone: trimmedPhone,
       })
       navigate('/otp', {
         state: {
-          email: email.trim() || undefined,
-          phone: phone.trim() || undefined,
+          email: trimmedEmail,
+          phone: trimmedPhone,
           mode: 'register',
+          otpSent: true,
         },
       })
     } catch (err: unknown) {

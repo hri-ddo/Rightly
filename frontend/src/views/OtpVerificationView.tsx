@@ -11,6 +11,7 @@ type LocationState = {
   email?: string
   phone?: string
   mode?: 'register' | 'login'
+  otpSent?: boolean
 }
 
 export function OtpVerificationView() {
@@ -23,10 +24,17 @@ export function OtpVerificationView() {
   const [email, setEmail] = useState(state.email ?? '')
   const [phone, setPhone] = useState(state.phone ?? '')
   const [otp, setOtp] = useState('')
-  const [otpSent, setOtpSent] = useState(Boolean(state.email || state.phone))
+  const [otpSent, setOtpSent] = useState(Boolean(state.otpSent))
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [info, setInfo] = useState<string | null>(null)
+
+  const deliveryHint =
+    import.meta.env.DEV && email.trim()
+      ? 'Local dev: open Mailpit at http://localhost:8025 — codes are not delivered to your real inbox.'
+      : import.meta.env.DEV && phone.trim() && !email.trim()
+        ? 'Local dev: SMS is only logged in the backend terminal (no real text message).'
+        : null
 
   useEffect(() => {
     if (!email && !phone && !state.email && !state.phone) {
@@ -47,13 +55,26 @@ export function OtpVerificationView() {
         phone: phone.trim() || undefined,
       })
       setOtpSent(true)
-      setInfo('Check your email or SMS for a 6-digit code.')
+      setInfo(
+        deliveryHint ??
+          (email.trim()
+            ? 'Check your email for a 6-digit code.'
+            : 'Check your SMS for a 6-digit code.'),
+      )
     } catch (err: unknown) {
       setError(formatApiError(err))
     } finally {
       setLoading(false)
     }
   }
+
+  useEffect(() => {
+    if (!state.otpSent) return
+    setInfo(
+      deliveryHint ??
+        (email.trim() ? 'Check your email for a 6-digit code.' : 'Check your SMS for a 6-digit code.'),
+    )
+  }, [state.otpSent, deliveryHint, email])
 
   const verify = async (event: FormEvent) => {
     event.preventDefault()
@@ -81,6 +102,9 @@ export function OtpVerificationView() {
       <p className="mt-2 text-sm text-on-surface-variant">
         One-time passcode login keeps your session on this device only.
       </p>
+      {deliveryHint && !otpSent ? (
+        <p className="mt-3 text-xs text-on-surface-variant">{deliveryHint}</p>
+      ) : null}
 
       {error ? (
         <div className="mt-6">

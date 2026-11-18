@@ -21,12 +21,15 @@ public class LocalNotificationGateway implements NotificationGateway {
     public void sendEmail(String to, String subject, String body) {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
+            message.setFrom("noreply@rightly.local");
             message.setTo(to);
             message.setSubject(subject);
             message.setText(body);
             mailSender.send(message);
+            log.debug("OTP email accepted by SMTP for {}", to);
         } catch (Exception ex) {
-            log.warn("Failed to send email to {}: {}", to, ex.getMessage());
+            log.error("Failed to send email to {}: {}", to, ex.getMessage());
+            throw new IllegalStateException("Could not send OTP email. Is Mailpit running on port 1025?", ex);
         }
     }
 
